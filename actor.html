@@ -45,7 +45,16 @@ function checkActor() {
 
     document.getElementById("result").innerHTML =
         "Correct: " + correct + " Not Correct: " + notCorrect;
+
+    if (notCorrect > 10) {
+        document.querySelector('input[onclick="checkActor()"]').onclick = tooManyGuesses;
+    }
 }
+
+function tooManyGuesses() {
+    alert("Sorry, too many wrong guesses.");
+}
+
 
 function updatePic() {
     switch (usePic) {
