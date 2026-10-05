@@ -2,10 +2,13 @@
 <html>
 <head>
     <title>Actors by Adam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
+<div class="container mt-5">
+<h2 class="text-primary mb-4">Actor Guessing Game</h2>
 
-<h2>Actor Guessing Game</h2>
 
 <form>
     <label for="actor">Peter Pan</label>
@@ -16,10 +19,13 @@
     <input type="text" id="guess">
     <br>
 
-    <input type="button" onclick="checkActor()" value="Check the guess">
+    <input type="button" class="btn btn-primary" onclick="checkActor()" value="Check the guess">
 </form>
 
-<div id="result">Correct: 0 Not Correct: 0</div>
+<div id="result" class="alert alert-info mt-3">
+    Correct: 0 Not Correct: 0
+</div>
+
 
 <div>
     <img id="foodPic" src="Apples.jpg" width="150" height="150" onclick="updatePic()">
@@ -76,6 +82,6 @@ function updatePic() {
 }
 
 </script>
-
+</div>
 </body>
 </html>
