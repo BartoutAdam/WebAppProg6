@@ -12,20 +12,20 @@
 <h2 class="text-primary mb-4">Adam sales computation</h2>
 
 
-<form>
+<form class="card p-4 shadow-sm">
     <label for="numberItems">Enter number items</label>
-    <input type="number" id="numberItems" value="1"> <br>
+    <input type="number" class="form-control" id="numberItems" value="1"> <br>
 
     <label for="itemCost">Enter the cost of one item</label>
-    <input type="number" id="itemCost" value="20.0"> <br>
+    <input type="number" class="form-control" id="itemCost" value="20.0"> <br>
 
     <label for="numberForDiscount">Enter number to get discount</label>
-    <input type="number" id="numberForDiscount" value="10"> <br>
+    <input type="number" class="form-control" id="numberForDiscount" value="10"> <br>
 
     <label for="discountRate">Enter the discount rate</label>
-    <input type="number" id="discountRate" value="0.15"> <br>
+    <input type="number" class="form-control" id="discountRate" value="0.15"> <br>
 
-    <input type="button" onclick="doDiscount()" value="Show costs">
+    <input type="button" class="btn btn-primary mt-3" onclick="doDiscount()" value="Show costs">
 </form>
 
 <p id="result">Costs are:</p>
@@ -103,4 +103,3 @@ function chooseOp (){
 
 </body>
 </html>
-
